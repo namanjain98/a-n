@@ -1,11 +1,7 @@
 pipeline{
   agent any
     stages{
-	stage('SCM'){
-		steps{
-			git branch: 'main', url:'git@github.com:namanjain98/a-n.git'
-            }
-	}
+	
 	stage('install'){
 		steps{
 		   sh "cd ${WORKSPACE}"
