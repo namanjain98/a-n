@@ -7,7 +7,7 @@ pipeline{
 		 sh "cd ${WORKSPACE}"
 	     sh "npm install"
 	     sh "npm run ng build --prod"
-	     sh "aws s3 cp dist/my-first-project s3://naman-070721211/ --recursive"
+	     sh "aws s3 cp dist/my-first-project s3://naman-07072121/ --recursive"
 	}
 	}
 }
